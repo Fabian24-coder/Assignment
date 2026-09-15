@@ -1,9 +1,9 @@
 myName = "Alioma Franco Buni"
 myAge = 13
-myHeight = 123
+myHeight = 1.23
 isStudent = True
 
 print(f"Name: {myName}")
-print(f"Age: {myAge} Years old")
-print(f"Height: {myHeight}centimeters")
-print(f"Student status: {isStudent }")
+print(f"Age: {myAge}")
+print(f"Height: {myHeight}")
+print(f"Student: {isStudent }")
