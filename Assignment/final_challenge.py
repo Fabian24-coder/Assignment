@@ -41,17 +41,17 @@ is_enrolled = True
 programmingLanguage = ["Python", "HTML", "CSS", "JavaScript", "Java"]
 print(f"Initial list: {programmingLanguage}")
 
-# 2. Print the first item
+# 2.first item
 print(f"First item: {programmingLanguage[0]}")
 
-# 3. Add a new item
+# 3. new item
 programmingLanguage.append("Java")
 print(f"After adding 'Java': {programmingLanguage}")
 
 # 4. Remove one item
 programmingLanguage.remove("CSS")
 
-# 5. Print the updated list
+# 5.the updated list
 print(f"Updated list after removing 'CSS': {programmingLanguage}")
 
 
@@ -61,14 +61,14 @@ print(f"Updated list after removing 'CSS': {programmingLanguage}")
 favNumbers = (7, 10, 25)
 
 # Display second number
-print(f"Second favorite number: {favNumbers[1]}")
+print(f"\nSecond favorite number: {favNumbers[1]}")
 
 
 #3. Set
 
 hobbies = {"Reading", "Gyming", "Football", "Reading"}
 
-print(f"Hobbies set: {hobbies}")
+print(f"\nHobbies set: {hobbies}")
 
 print("Note: Sets automatically remove duplicate elements, that is why 'Reading' appeared once.")
 
@@ -89,7 +89,7 @@ student_profile = {
 }
 
 #student's name
-print(f"Student Name: {student_profile['name']}")
+print(f"\nStudent Name: {student_profile['name']}")
 
 #student's skills
 print(f"Student Skills: {student_profile['skills']}")
@@ -119,7 +119,7 @@ user_info = {
 }
 
 #formatted output 
-print(f"Hello {user_info['name']}!")
+print(f"\nHello {user_info['name']}!")
 
 print(f"You are {user_info['age']} years old.")
 
