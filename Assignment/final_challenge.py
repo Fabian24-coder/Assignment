@@ -1,4 +1,4 @@
-# Question 9: Student Management Data
+# 9. Student Management Data
 
 # Create a dictionary containing data for 3 students
 students = {
@@ -23,12 +23,26 @@ students = {
 }
 
 # Print the information for all students
-for student_id, details in students.items():
-    print(f"\nID: {student_id}")
-    print(f"Name: {details['name']}")
-    print(f"Age: {details['age']}")
-    print(f"Course: {details['course']}")
-    print(f"Skills: {', '.join(details['skills'])}")
+# Student 1
+print("\nID: student1")
+print("Name:", students["student1"]["name"])
+print("Age:", students["student1"]["age"])
+print("Course:", students["student1"]["course"])
+print("Skills:", ", ".join(students["student1"]["skills"]))
+
+# Student 2
+print("\nID: student2")
+print("Name:", students["student2"]["name"])
+print("Age:", students["student2"]["age"])
+print("Course:", students["student2"]["course"])
+print("Skills:", ", ".join(students["student2"]["skills"]))
+
+# Student 3
+print("\nID: student3")
+print("Name:", students["student3"]["name"])
+print("Age:", students["student3"]["age"])
+print("Course:", students["student3"]["course"])
+print("Skills:", ", ".join(students["student3"]["skills"]))
 
 print("\n")
 # Student Information Variables
@@ -37,21 +51,21 @@ student_age = 19
 student_height = 1.23         
 is_enrolled = True            
 
-# list containing of at least 5 programming languages
+# 1. list
 programmingLanguage = ["Python", "HTML", "CSS", "JavaScript", "Java"]
 print(f"Initial list: {programmingLanguage}")
 
-# 2.first item
+# first item
 print(f"First item: {programmingLanguage[0]}")
 
-# 3. new item
+# new item
 programmingLanguage.append("Java")
 print(f"After adding 'Java': {programmingLanguage}")
 
-# 4. Remove one item
+# Remove one item
 programmingLanguage.remove("CSS")
 
-# 5.the updated list
+# the updated list
 print(f"Updated list after removing 'CSS': {programmingLanguage}")
 
 
