@@ -16,3 +16,4 @@ student.update({"level": "Beginner"})
 student.pop("age")
 
 print(f"New Student Profile: {student}")
+
