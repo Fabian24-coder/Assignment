@@ -138,3 +138,8 @@ print(f"\nHello {user_info['name']}!")
 print(f"You are {user_info['age']} years old.")
 
 print(f"Your favorite programming language is {user_info['favoriteLanguage']}.")
+
+#Lists can be changed
+#Tuple cannot be changed
+#Sets cannot have duplicate values
+#Dictionaries store data in key-value pairs
