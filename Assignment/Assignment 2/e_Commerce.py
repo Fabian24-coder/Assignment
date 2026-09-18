@@ -31,6 +31,7 @@ catalog = {
 #     else:
 #         print("Wrong input!!, Enter from 1-3")
 
+
 grandTotal = 0
 discountRate = 0
 while True:
