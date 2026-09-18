@@ -10,7 +10,7 @@ for student in range(count + 1):
 failed_count = 0
 total_score = 0.0
 
-print("\n=======\nEVALUATION RESULTS\n=======")
+print(("\n="*20) + "\nEVALUATION RESULTS\n" + ("="*20))
 
 for name, score in records.items():
     total_score += score
@@ -28,15 +28,14 @@ for name, score in records.items():
         status = "Needs Improvement"
         failed_count += 1
         
-    print(f"{name}: Score {score:.1f} | {grade} | {status}")
+    print(f"Name: {name}\nScore: {score:.1f}\nGrade: {grade}\nComment: {status}")
 
 # Class Summary
 average_score = total_score / count if count > 0 else 0.0
 
-print("\n==========")
+print("="*20)
 print("CLASS PERFORMANCE")
-print("==========")
+print("="*20)
 print(f"Average Score: {average_score:.1f}")
 print(f"Total Passed: {passed_count}")
 print(f"Total Failed: {failed_count}")
-print("================")
