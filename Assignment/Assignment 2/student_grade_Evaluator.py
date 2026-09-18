@@ -10,7 +10,7 @@ for student in range(count + 1):
 failed_count = 0
 total_score = 0.0
 
-print(("\n="*20) + "\nEVALUATION RESULTS\n" + ("="*20))
+print(("="*20) + "\nEVALUATION RESULTS\n" + ("="*20))
 
 for name, score in records.items():
     total_score += score
