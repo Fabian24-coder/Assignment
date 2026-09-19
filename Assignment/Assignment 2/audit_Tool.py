@@ -14,12 +14,11 @@ security_alert_count = 0
 
 for user_id, name, role, is_active, login_attempts in users:
     
-    # Check security lock first
+#login attempts
     if login_attempts >= 5:
         print(f"[ALERT] Account {name} is LOCKED due to excessive failed logins ({login_attempts} attempts).")
         security_alert_count += 1
 
-    # Access evaluation
     if is_active and role == "admin":
         print(f"[GRANT] Full system access granted to {name} (ID: {user_id})")
         active_granted_count += 1
@@ -34,17 +33,10 @@ print( "[GRANT] Full system access granted to <Name> (ID: <ID>)")
 
 
 
-
-# print("AUDIT SUMMARY REPORT")
-# print("="*30)
-# print("Total Active Users Granted: ")
-# print("Total Inactive Accounts: ")
-# print("Total Security Alerts: ")
-
-print("\n===========")
+print("\n====================================")
 print("AUDIT SUMMARY REPORT")
-print("===========")
+print("====================================")
 print(f"Total Active Users Granted: {active_granted_count}")
 print(f"Total Inactive Accounts: {inactive_count}")
 print(f"Total Security Alerts: {security_alert_count}")
-print("===========")
+print("====================================")
